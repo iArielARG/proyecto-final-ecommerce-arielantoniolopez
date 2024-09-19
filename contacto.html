@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pañales CAIRO</title>
+    <link rel="icon" href="./img/cairo_favicon.ico">
+</head>
+<body>
+    <header>
+        <div><img src="./img/cairo_logo.png" alt="Cairo logo"></div>
+        <h1>PAÑALES <strong>CAIRO</strong></h1>
+        <h2>junto a vos en esta etapa</h2>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">TIENDA</a></li>
+            <li><a href="">NOSOTROS</a></li>
+            <li><a href="./contacto.html">CONTACTO</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>CONTACTO</h1>
+        <p>Complete el siguiente formulario por favor.</p>
+        <form action="" method="post">
+            <label for="reason">MOTIVO.</label>
+            <select name="" id="reason" required>
+                <option value disabled selected>SELECCIONE UNO</option>
+                <option value="1">CONSULTA</option>
+                <option value="2">RECLAMO</option>
+                <option value="3">FELICITACIÓN</option>
+            </select>
+            <label for="firstname">NOMBRE.</label>
+            <input type="text" id="firstname" placeholder="Ingrese su nombre" required>
+            <label for="surname">APELLIDO.</label>
+            <input type="text" id="surname" placeholder="Ingrese su apellido" required>
+            <label for="phone">CELULAR.</label>
+            <input type="tel" id="phone" placeholder="Ingrese los 10 números de su celular" required>
+            <label for="email">CORREO.</label>
+            <input type="email" id="email" placeholder="Ingrese su dirección de correo electrónico" required>
+            <label for="message">MENSAJE:</label>
+            <textarea name="" id="message" placeholder="Escriba aquí su mensaje" required></textarea>
+            <label for="policy">ACEPTO LAS POLITICAS DE PRIVACIDAD</label>
+            <input type="checkbox" id="policy" required>
+            <input type="submit" value="ENVIAR">
+            <p>Usted estará recibiendo una respuesta lo antes posible, muchas gracias.</p>
+        </form>
+    </main>
+    <footer>
+        <small>Copyright 2024</small>
+    </footer>
+</body>
+</html>
