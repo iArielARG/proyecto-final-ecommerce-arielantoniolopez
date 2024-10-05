@@ -23,27 +23,27 @@
     <main>
         <h1>CONTACTO</h1>
         <p>Complete el siguiente formulario por favor.</p>
-        <form action="" method="post">
+        <form action="https://formspree.io/f/mqazveow" method="post">
             <label for="reason">MOTIVO.</label>
-            <select name="" id="reason" required>
+            <select name="motivo" id="reason" required>
                 <option value disabled selected>SELECCIONE UNO</option>
                 <option value="1">CONSULTA</option>
                 <option value="2">RECLAMO</option>
                 <option value="3">FELICITACIÓN</option>
             </select>
             <label for="firstname">NOMBRE.</label>
-            <input type="text" id="firstname" placeholder="Ingrese su nombre" required>
+            <input name="nombre" type="text" id="firstname" placeholder="Ingrese su nombre" required>
             <label for="surname">APELLIDO.</label>
-            <input type="text" id="surname" placeholder="Ingrese su apellido" required>
+            <input name="apellido" type="text" id="surname" placeholder="Ingrese su apellido" required>
             <label for="phone">CELULAR.</label>
-            <input type="tel" id="phone" placeholder="Ingrese los 10 números de su celular" required>
+            <input name="celular" type="tel" id="phone" placeholder="Ingrese los 10 números de su celular" required>
             <label for="email">CORREO.</label>
-            <input type="email" id="email" placeholder="Ingrese su dirección de correo electrónico" required>
+            <input name="correo" type="email" id="email" placeholder="Ingrese su dirección de correo electrónico" required>
             <label for="message">MENSAJE:</label>
-            <textarea name="" id="message" placeholder="Escriba aquí su mensaje" required></textarea>
+            <textarea name="mensaje" id="message" placeholder="Escriba aquí su mensaje" required></textarea>
             <label for="policy">ACEPTO LAS POLITICAS DE PRIVACIDAD</label>
             <input type="checkbox" id="policy" required>
-            <input type="submit" value="ENVIAR">
+            <button type="submit">ENVIAR MENSAJE</button>
             <p>Usted estará recibiendo una respuesta lo antes posible, muchas gracias.</p>
         </form>
     </main>
