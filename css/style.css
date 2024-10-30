@@ -7,6 +7,10 @@
     justify-content: space-between;
     padding: 20px;
   }
+
+  .logo {
+    width: 30%;
+  }
 }
 
 * {
@@ -47,7 +51,7 @@ li {
 html {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 100;
+  font-weight: 200;
   font-style: normal;
 }
 
