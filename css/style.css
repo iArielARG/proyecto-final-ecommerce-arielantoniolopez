@@ -1,6 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 @media (max-width: 768px) {
+  header {
+    font-size: 0.8rem;
+    color: white;
+  }
+  
+  nav {
+    display: grid;
+    flex-direction: row;
+    padding-left: 0;
+  }
+  
   .productos {
     display: grid;
     grid-template-columns: 1fr;
@@ -9,7 +20,11 @@
   }
 
   .logo {
-    width: 30%;
+    width: 120%;
+  }
+
+  form {
+    width: 100%;
   }
 }
 
@@ -24,14 +39,21 @@
 }
 
 img {
-  max-width: 300px;
-  display: block;
-  margin: 0 auto;
+  max-width: 250px;
+}
+
+header img {
+  max-width: 100px;
+  grid-area: logo;
 }
 
 a {
   color: black;
   text-decoration: none;
+}
+
+nav {
+  background-color: green;
 }
 
 nav ul {
@@ -55,16 +77,26 @@ html {
   font-style: normal;
 }
 
-body {
+main {
+  min-height: 100vh;
   background: linear-gradient(green, lightgreen);
 }
 
 header {
+  color: white;
+  display: grid;
+  grid-template-columns: 100px 1fr;
   background-color: green;
+  grid-template-areas: "logo name" "logo slogan";
 }
 
-header h1, h2 {
-  text-align: center;
+header h1 {
+  grid-area: name ;
+  align-self: end;
+}
+
+header h2 {
+  grid-area: slogan;
 }
 
 .productos {
@@ -77,7 +109,7 @@ header h1, h2 {
 
 .producto {
   width: 350px;
-  height: 400px;
+  height: auto;
   background-color: #2196f3;
   color: white;
   border-radius: 10px;
