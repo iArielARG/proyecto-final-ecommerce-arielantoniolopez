@@ -84,6 +84,16 @@ main {
   background: linear-gradient(green, lightgreen);
 }
 
+main img {
+  padding-top: 3%;
+  padding-bottom: 2%;
+}
+
+main section p {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 header {
   color: white;
   display: grid;
