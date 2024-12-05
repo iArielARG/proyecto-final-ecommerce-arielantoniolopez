@@ -100,6 +100,42 @@ header h2 {
   grid-area: slogan;
 }
 
+.presentacion p {
+  font-size: 1.2rem;
+}
+
+.mapa {
+  display: flex;
+  justify-content: center;
+  padding-top: 2%;
+  padding-bottom: 3%;
+}
+
+iframe {
+  width: 50%;
+  border-radius: 10px;
+}
+
+.reseñas {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.reseña {
+  width: 30%;
+  text-align: center;
+}
+
+.reseña img {
+  border-radius: 5px;
+}
+
+div h2 {
+  padding-top: 1%;
+}
+
 .productos {
   display: flex;
   flex-wrap: wrap;
@@ -132,10 +168,6 @@ button {
   font-size: 16px;
 }
 
-footer {
-  background-color: green;
-}
-
 .producto:hover {
   background-color: blue;
   transform: translateY(-5);
@@ -158,5 +190,38 @@ form > * {
 }
 
 footer {
+  background-color: green;
   text-align: center;
+  display: block;
+}
+
+.contenedor-de-redes a h3{
+  color: white;
+}
+
+#contenedor-redes {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.creditos small{
+  font-size: 18px;
+  color: #F9FAFC;
+  margin-bottom: 5px;
+}
+
+.redes{
+  width: 50px;
+  color: white;
+}
+
+.redes a img{
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+  margin: 2px;
+}
+
+.iconos a img {
+  width: 5%;
 }

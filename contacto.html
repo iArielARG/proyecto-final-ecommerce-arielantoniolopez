@@ -1,16 +1,21 @@
 <!DOCTYPE html>
-<html lang="ES">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pañales CAIRO</title>
     <link rel="icon" href="./img/cairo_favicon.ico">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
     </style>
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/contacto.css" />
+    <script src="./js/contacto.js"></script>
+    <script src="https://kit.fontawesome.com/acbdbaa3d0.js" crossorigin="anonymous"></script>
+    <!--El sitio web debe incluir un formulario de contacto, con al menos 5 campos que incluya (un checkbox o radiobutton), un select y una imagen, con validación realizada mediante JavaScript para que los campos sean obligatorios.-->
+  </head>
+
+  <body>
     <header>
         <img class="logo" src="./img/cairo_logo.png" alt="Cairo logo">
         <h1>PAÑALES <strong>CAIRO</strong></h1>
@@ -22,42 +27,58 @@
             <li><a href="./tienda.html">TIENDA</a></li>
             <li><a href="./nosotros.html">NOSOTROS</a></li>
             <li><a href="./contacto.html">CONTACTO</a></li>
-            <div>
-                <i class="fa-brands fa-whatsapp fa-shake"></i>
-                <a href="#"><span>AGENDANOS!</span></a>
-            </div>
+            <li><a href="#"><i class="fa-brands fa-whatsapp fa-shake"></i>AGENDANOS!</a></li>
         </ul>
     </nav>
     <main>
-        <h1>CONTACTO</h1>
-        <p>Complete el siguiente formulario por favor.</p>
-        <form action="https://formspree.io/f/mqazveow" method="post">
-            <label for="reason">MOTIVO.</label>
-            <select name="motivo" id="reason" required>
-                <option value disabled selected>SELECCIONE UNO</option>
-                <option value="1">CONSULTA</option>
-                <option value="2">RECLAMO</option>
-                <option value="3">FELICITACIÓN</option>
-            </select>
-            <label for="firstname">NOMBRE.</label>
-            <input name="nombre" type="text" id="firstname" placeholder="Ingrese su nombre" required>
-            <label for="surname">APELLIDO.</label>
-            <input name="apellido" type="text" id="surname" placeholder="Ingrese su apellido" required>
-            <label for="phone">CELULAR.</label>
-            <input name="celular" type="tel" id="phone" placeholder="Ingrese los 10 números de su celular" required>
-            <label for="email">CORREO.</label>
-            <input name="correo" type="email" id="email" placeholder="Ingrese su dirección de correo electrónico" required>
-            <label for="message">MENSAJE:</label>
-            <textarea name="mensaje" id="message" placeholder="Escriba aquí su mensaje" required></textarea>
-            <label for="policy">ACEPTO LAS POLITICAS DE PRIVACIDAD</label>
-            <input type="checkbox" id="policy" required>
-            <button type="submit">ENVIAR MENSAJE</button>
-            <p>Usted estará recibiendo una respuesta lo antes posible, muchas gracias.</p>
-        </form>
+      <div>
+        <h2>¡Queremos conocerte!</h2>
+        <p>
+          Nos encantaría que te pusieras en contacto con nosotros, siempre
+          podemos ofrecerte una opción que se adapte a tus necesidades.
+        </p>
+      </div>
+      <form action="https://formspree.io/f/mqazveow" class="form" method="post">
+        <label for="motive">Motivo:</label>
+        <select name="Seleccione un motivo" id="motive" required>
+          <option value="" disabled selected>Selecciona una opción...</option>
+          <option value="value1">CONSULTA</option>
+          <option value="value2">RECLAMO</option>
+          <option value="value3">FELICITACIÓN</option>
+        </select
+        ><br /><br />
+        <label for="name">Nombre</label><br />
+        <input type="text" name="name" id="name" required /><br />
+        <label for="surname">Apellido</label><br />
+        <input type="text" name="surname" id="surname" required /><br />
+        <label for="tel">Teléfono</label><br />
+        <input type="tel" name="tel" id="tel" required /><br />
+        <label for="email">Correo Electrónico</label><br />
+        <input type="email" name="email" id="email" required /><br />
+        <label for="message">Ingrese su mensaje o consulta aquí</label><br />
+        <textarea name="message" id="message" cols="30" rows="10"></textarea
+        ><br />
+        <input type="checkbox" name="privacity" id="privacity" required /><label
+          for="privacity"
+          >Acepto la politica de privacidad</label
+        ><br />
+        <input type="submit" value="ENVIAR" onclick="validate()"/>
+      </form>
     </main>
     <footer>
-        <small>Copyright 2024</small>
-        <script src="https://kit.fontawesome.com/acbdbaa3d0.js" crossorigin="anonymous"></script>
+        <div class="footer-content container">
+            <div class="contenedor-de-redes">
+                <div class="creditos">
+                    <small>Pañales "CAIRO" todos los derechos reservados 2024 ©</small>
+                </div>
+                <h3>SEGUÍNOS</h3>
+                <div class="iconos">
+                    <a href="#"><img src="./img/logo-facebook.webp" alt="Facebook"/></a>
+                    <a href="#"><img src="./img/logo-instagram.webp" alt="Instagram"/></a>
+                    <a href="#"><img src="./img/logo-twitter.webp" alt="X"/></a>
+                </div>
+            </div>
+        </div>
     </footer>
-</body>
+  </body>
 </html>
