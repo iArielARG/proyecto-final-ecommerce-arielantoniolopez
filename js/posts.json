@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "name": "BABYSEC Premium",
+        "size": "Talle: P",
+        "image": "./img/babysec-premium.png",
+        "description": "Pañales suaves, absorbentes y elastizados.",
+        "amount": 10.00
+    },
+    {
+        "id": 2,
+        "name": "BABYSEC Premium",
+        "size": "Talle: M",
+        "image": "./img/babysec-premium.png",
+        "description": "Pañales suaves, absorbentes y elastizados.",
+        "amount": 10.00
+    },
+    {
+        "id": 3,
+        "name": "BABYSEC Premium",
+        "size": "Talle: G",
+        "image": "./img/babysec-premium.png",
+        "description": "Pañales suaves, absorbentes y elastizados.",
+        "amount": 10.00
+    },
+    {
+        "id": 4,
+        "name": "BABYSEC Premium",
+        "size": "Talle: XG",
+        "image": "./img/babysec-premium.png",
+        "description": "Pañales suaves, absorbentes y elastizados.",
+        "amount": 10.00
+    },
+    {
+        "id": 5,
+        "name": "BABYSEC Premium",
+        "size": "Talle: XXG",
+        "image": "./img/babysec-premium.png",
+        "description": "Pañales suaves, absorbentes y elastizados.",
+        "amount": 10.00
+    },
+    {
+        "id": 6,
+        "name": "BABYSEC Ultra",
+        "size": "Talle: P",
+        "image": "./img/babysec-ultra.png",
+        "description": "Pañales suaves y absorbentes.",
+        "amount": 8.00
+    },
+    {
+        "id": 7,
+        "name": "BABYSEC Ultra",
+        "size": "Talle: M",
+        "image": "./img/babysec-ultra.png",
+        "description": "Pañales suaves y absorbentes.",
+        "amount": 8.00
+    },
+    {
+        "id": 8,
+        "name": "BABYSEC Ultra",
+        "size": "Talle: G",
+        "image": "./img/babysec-ultra.png",
+        "description": "Pañales suaves y absorbentes.",
+        "amount": 8.00
+    },
+    {
+        "id": 9,
+        "name": "BABYSEC Ultra",
+        "size": "Talle: XG",
+        "image": "./img/babysec-ultra.png",
+        "description": "Pañales suaves y absorbentes.",
+        "amount": 8.00
+    },
+    {
+        "id": 10,
+        "name": "BABYSEC Ultra",
+        "size": "Talle: XXG",
+        "image": "./img/babysec-ultra.png",
+        "description": "Pañales suaves y absorbentes.",
+        "amount": 8.00
+    }
+]
