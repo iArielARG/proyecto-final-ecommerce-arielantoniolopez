@@ -1,62 +1,80 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-@media (max-width: 768px) {
-  header {
-    font-size: 0.8rem;
-    color: white;
-  }
- 
-  nav ul {
-    padding-left: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .listado-productos {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-content: space-between;
-    padding: 20px;
-  }
-
-  .logo {
-    width: 120%;
-  }
-
-  form {
-    width: 100%;
-  }
+@media (min-width: 1024px) {
 }
 
-@media screen and (min-width: 1024px) {
-  
+/*QUERY PARA TABLET*/
+@media (min-width: 768px) {
+ /*logo y slogan*/
+.header-container {
+  display: grid;
+  grid-template-columns: 10% 90%;
+  justify-items: start;
+  min-height: 80px;
+}
+.logo {
+  min-width: 100%;
+}
+.div-slogan {
+  display: grid;
+  align-content: center;
+  justify-items: start;
+}
+/*barra de navegacion*/
+.ul-container {
+  padding-left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+/*index reseñas*/
+#reseñas {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+/*productos*/
+#producto {
+  width: 30%;
+}
 }
 
+/*MOBILE FIRST*/
+/*reset*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  max-width: 100%;
+}
+
+/*fuente del sitio*/
+html {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+/*logo y slogan*/
+header {
+  font-size: 0.8rem;
+  color: white;
+  display: grid;
+  grid-template-rows: auto;
+  justify-items: center;
+  text-align: center;
+  background-color: green;
 }
 
 .logo {
   border-radius: 100%;
+  width: 60%;
+  padding-top: 10px;
 }
 
-img {
-  max-width: 100%;
-}
-
-header img {
-  max-width: 100px;
-  grid-area: logo;
-}
-
-a {
-  color: black;
-  text-decoration: none;
-}
-
+/*barra de navegación*/
 nav {
   background-color: green;
   position: sticky;
@@ -65,57 +83,25 @@ nav {
   padding-bottom: 10px;
 }
 
+a {
+  color: black;
+  text-decoration: none;
+}
+
 nav ul {
-  display: flex;
-  justify-content: space-around;
   padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
-nav ul li:hover {
-  font-weight: 800;
-}
-
 li {
-  list-style: none; 
+  list-style: none;
 }
 
-html {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 200;
-  font-style: normal;
-}
-
+/*contenedor principal*/
 main {
   min-height: 100vh;
   background: linear-gradient(green, lightgreen);
-}
-
-main img {
-  padding-top: 3%;
-  padding-bottom: 2%;
-}
-
-main section p {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-header {
-  color: white;
-  display: grid;
-  grid-template-columns: 100px 1fr;
-  background-color: green;
-  grid-template-areas: "logo name" "logo slogan";
-}
-
-header h1 {
-  grid-area: name ;
-  align-self: end;
-}
-
-header h2 {
-  grid-area: slogan;
 }
 
 .presentacion p {
@@ -123,69 +109,85 @@ header h2 {
   padding-top: 2%;
 }
 
+/*index ubicacion*/
 .mapa {
   display: flex;
   justify-content: center;
-  padding-top: 2%;
-  padding-bottom: 3%;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 iframe {
-  width: 50%;
+  width: 80%;
   border-radius: 10px;
 }
 
+/*index reseñas*/
 .reseñas {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-items: center;
+  grid-template-columns: 1fr;
   padding-top: 3%;
   padding-bottom: 3%;
 }
 
 .reseña {
-  width: 30%;
-  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  border-radius: 10px;
+  justify-items: center;
 }
 
 .reseña img {
-  border-radius: 5px;
+  border-radius: 20px;
 }
 
-div h2 {
-  padding-top: 1%;
+.reseña p {
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
 }
 
+/*pie de pagina*/
+footer {
+  background-color: green;
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+
+#contenedor-redes {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.creditos small {
+  font-size: 18px;
+  color: #F9FAFC;
+  margin-bottom: 5px;
+}
+
+.iconos a img {
+  width: 5%;
+}
+
+/*tienda productos*/
 .listado-productos {
   display: flex;
   flex-wrap: wrap;
-  padding: 20px;
-  min-width: 100vw;
+  max-width: 100vw;
   justify-content: space-evenly;
 }
 
 .producto {
-  width: 350px;
+  width: 40%;
   height: auto;
   background-color: blue;
+  font-size: 1rem;
   color: white;
   border-radius: 10px;
   padding: 20px;
   margin: 10px;
   cursor: pointer;
-}
-
-.producto h2{
-  font-size: 20px;
-}
-
-button {
-  background-color: green;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 16px;
 }
 
 .producto:hover {
@@ -194,78 +196,63 @@ button {
   box-shadow: 12px;
 }
 
+.btn-agregar {
+  font-size: 0.8rem;
+  background-color: green;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/*main nosotros*/
+main img {
+  padding-top: 3%;
+  padding-bottom: 2%;
+}
+
+main section p {
+  padding: 1rem 10px 1rem 10px;
+}
+
+/*main contacto*/
+main div p {
+  padding: 1rem 10px 1rem 10px;
+}
 form {
   width: 50%;
   margin: 0 auto;
-  max-width: 700px;
-  min-width: 360px;
+  max-width: 100%;
+  min-width: 80%;
   padding: 20px;
   box-sizing: border-box;
 }
-
-form > * {
+form>* {
   display: block;
   width: 100%;
   text-align: center;
 }
 
-footer {
-  background-color: green;
-  text-align: center;
-  display: block;
-  width: 100%;
-}
-
-.contenedor-de-redes a h3{
-  color: white;
-}
-
-#contenedor-redes {
-  display: flex;
-  justify-content: flex-start;
-}
-
-.creditos small{
-  font-size: 18px;
-  color: #F9FAFC;
-  margin-bottom: 5px;
-}
-
-.redes{
-  width: 50px;
-  color: white;
-}
-
-.redes a img{
-  width: 45px;
-  height: 45px;
-  object-fit: contain;
-  margin: 2px;
-}
-
-.iconos a img {
-  width: 5%;
-}
-
-table {
-  border-collapse: collapse;
-  width: 100%;
-}
-
-td {
-  text-align: center;
-  border-bottom: 1px solid grey;
-  padding-top: 1em;
-}
-
-.fa-plus {
-  background-color: white;
-  border-radius: 100%;
-  color: green
-}
-
-.fa-minus {
-  background-color: white;
-  border-radius: 100%;
-  color: red;
-}
+/*main carrito*/  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  .encabezados {
+    font-size: 0.8rem;
+  }
+  td {
+    text-align: center;
+    border-bottom: 1px solid grey;
+    padding-top: 1em;
+  }
+  .fa-plus {
+    background-color: white;
+    border-radius: 100%;
+    color: green
+  }
+  .fa-minus {
+    background-color: white;
+    border-radius: 100%;
+    color: red;
+  }

@@ -13,13 +13,17 @@
     <script src="https://kit.fontawesome.com/acbdbaa3d0.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <img class="logo" src="./img/cairo_logo.png" alt="Cairo logo">
-        <h1>PAÑALES <strong>CAIRO</strong></h1>
-        <h2>junto a vos en esta etapa</h2>
+    <header class="header-container">
+        <div class="div-logo">
+            <img class="logo" src="./img/cairo_logo.png" alt="Cairo logo">
+        </div>
+        <div class="div-slogan">
+            <div class="div-h1"><h1>PAÑALES <strong>CAIRO</strong></h1></div>
+            <div class="div-h2"><h2>"junto a vos en esta etapa"</h2></div>
+        </div>
     </header>
     <nav>
-        <ul>
+        <ul class="ul-container">
             <li><a href="./index.html">HOME</a></li>
             <li><a href="./tienda.html">TIENDA</a></li>
             <li><a href="./nosotros.html">NOSOTROS</a></li>
@@ -36,10 +40,10 @@
         </p>
        </div>
        <div class="mapa">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.4881132067953!2d-58.790826321006676!3d-34.64237391659809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc944e7191b0dd%3A0x28bfcff5d99bcc51!2sHospital%20Mariano%20y%20Luciano%20de%20la%20Vega!5e0!3m2!1ses!2sar!4v1733434725573!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.4881132067953!2d-58.790826321006676!3d-34.64237391659809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc944e7191b0dd%3A0x28bfcff5d99bcc51!2sHospital%20Mariano%20y%20Luciano%20de%20la%20Vega!5e0!3m2!1ses!2sar!4v1733434725573!5m2!1ses!2sar" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         <h2>La voz de nuestros clientes</h2>
-        <section class="reseñas">
+        <section class="reseñas" id="reseñas">
             <div class="reseña">
                 <img src="./img/romina.png" alt="foto de perfil de romina">
                 <h3>Romina</h3>
@@ -61,7 +65,7 @@
         </section>
     </main>
     <footer>
-        <div class="footer-content container">
+        <div>
             <div class="contenedor-de-redes">
                 <div class="creditos">
                     <small>Pañales "CAIRO" todos los derechos reservados 2024 ©</small>

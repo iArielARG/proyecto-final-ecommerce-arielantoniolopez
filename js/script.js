@@ -16,9 +16,9 @@ const mostrarProductos = () => {
 
     productos.forEach((producto) => {
         const html = `
-            <article class="producto" data-id="${producto.id}">
-                <h2>${producto.nombre}</h2>
-                <h2>${producto.tamano}</h2>
+            <article class="producto" id="producto" data-id="${producto.id}">
+                <h3>${producto.nombre}</h3>
+                <h3>${producto.tamano}</h3>
                 <img src="${producto.image}" alt="${producto.nombre}">
                 <p>${producto.description}</p>
                 <p><strong>PRECIO: $${producto.precio}</strong></p>
@@ -59,3 +59,4 @@ document.addEventListener('click', (event) => {
         alert("El producto fue agregado al carrito exitosamente!");
     }
 })
+
