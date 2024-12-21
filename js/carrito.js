@@ -10,7 +10,7 @@ let total = 0;
 carrito.forEach((item) => {
     const html = `
         <tr data-id="${item.id}">
-            <td>${item.nombre} ${item.tamano}</td>
+            <td><i class="fa-solid fa-trash"></i>       ${item.nombre} ${item.tamano}</td>
             <td><i id="refresh" class="fa-solid fa-plus"></i>        ${item.cantidad}        <i id="refresh" class="fa-solid fa-minus"></i></td>
             <td>$${item.precio}</td>
             <td>$${subtotal = item.precio * item.cantidad}</td>
